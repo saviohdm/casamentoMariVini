@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana & Vinicius - Casamento</title>
+
+    <meta name="description" content="Casamento de Mariana e Vinicius - 06 de Junho de 2026">
+    <meta property="og:title" content="Mariana & Vinicius - Casamento">
+    <meta property="og:description" content="Estamos nos casando! Celebre conosco em 06 de Junho de 2026">
+    <meta property="og:image" content="fotos_do_casal/PHOTO-2026-04-17-20-56-13.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Invitation Landing -->
+    <div id="inv-landing" class="inv-landing">
+
+        <!-- Tela 1: Envelope fechado -->
+        <div id="inv-cover" class="inv-cover" role="button" tabindex="0" aria-label="Toque para abrir o convite">
+            <div class="inv-cover-content">
+                <img src="Convite Mariana e Vinícius 06.06.26.jpeg" class="inv-envelope-img" alt="Convite de casamento de Mariana e Vinicius">
+            </div>
+            <div class="inv-hint" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+                <span>Toque para abrir</span>
+            </div>
+        </div>
+
+        <!-- Tela 2: Cartão aberto com aquarela e texto -->
+        <div id="inv-card" class="inv-card" aria-hidden="true">
+            <div class="inv-watercolor">
+                <img src="IMG_8275.jpg" class="inv-watercolor-img" alt="Chácara Safera, Trindade - GO" loading="lazy">
+                <div class="inv-watercolor-fade"></div>
+            </div>
+            <div class="inv-card-body">
+                <p class="inv-pretitle">Convidamos você para o nosso casamento</p>
+                <h1 class="inv-names">Mariana <span class="inv-ampersand">&amp;</span> Vinicius</h1>
+                <div class="inv-divider"></div>
+                <p class="inv-date">06 de Junho de 2026</p>
+                <p class="inv-time">Sábado &middot; 16 horas</p>
+                <p class="inv-location">Chácara Safera &ndash; Trindade, GO</p>
+                <button id="inv-enter-btn" class="inv-enter-btn">
+                    Ver detalhes do evento
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Hero -->
+    <main class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <p class="hero-subtitle">Convidamos você para o nosso casamento</p>
+            <h1 class="hero-names">Mariana <span class="ampersand">&amp;</span> Vinicius</h1>
+            <p class="hero-date">06 de Junho de 2026 &middot; 16h00</p>
+            <p class="hero-location">Chácara Safera, Trindade &ndash; GO</p>
+
+            <div class="countdown-compact">
+                <div class="countdown-item">
+                    <span id="days">--</span>
+                    <span class="countdown-label">dias</span>
+                </div>
+                <span class="countdown-sep">&middot;</span>
+                <div class="countdown-item">
+                    <span id="hours">--</span>
+                    <span class="countdown-label">h</span>
+                </div>
+                <span class="countdown-sep">&middot;</span>
+                <div class="countdown-item">
+                    <span id="minutes">--</span>
+                    <span class="countdown-label">min</span>
+                </div>
+                <span class="countdown-sep">&middot;</span>
+                <div class="countdown-item">
+                    <span id="seconds">--</span>
+                    <span class="countdown-label">seg</span>
+                </div>
+            </div>
+
+            <div class="action-grid">
+                <button class="action-btn" data-modal="dresscode">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Dress Code</span>
+                </button>
+
+                <button class="action-btn" data-modal="local">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Local &amp; Rota</span>
+                </button>
+
+                <button class="action-btn action-btn--highlight" data-modal="rsvp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L7.91 8.78A16 16 0 0 0 12 12.87a16 16 0 0 0 4.09 2.09l1.64-1.64a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>Confirmar Presença</span>
+                </button>
+
+                <button class="action-btn" data-modal="presentes">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"></path>
+                        <rect x="2" y="7" width="20" height="5" rx="1"></rect>
+                        <path d="M12 22V7"></path>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                    </svg>
+                    <span>Presentes</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-footer">
+            <p>Com a bênção de nossos pais</p>
+            <p class="parents">Adriana Fassa &amp; Marco Vezzani &middot; Elizângela França &amp; Vanildo Rodrigues</p>
+        </div>
+    </main>
+
+    <!-- Modal: Dress Code -->
+    <div id="modal-dresscode" class="modal" role="dialog" aria-modal="true" aria-labelledby="dresscode-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <h2 id="dresscode-title">Dress Code</h2>
+            <p class="modal-main">Social Completo</p>
+            <p class="modal-desc">Pedimos que venham vestidos de forma social completa, valorizando a elegância da ocasião.<br><br>Mulheres: vestidos longos ou midi.<br>Homens: terno e gravata.</p>
+        </div>
+    </div>
+
+    <!-- Modal: Local & Rota -->
+    <div id="modal-local" class="modal" role="dialog" aria-modal="true" aria-labelledby="local-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+            </div>
+            <h2 id="local-title">Local &amp; Rota</h2>
+            <p class="modal-main">Chácara Safera</p>
+            <p class="modal-desc">GO-050, Trindade &ndash; Goiás<br>06 de Junho de 2026 &middot; 16h00</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8!2d-49.5!3d-16.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGO-050%2C%20Trindade%20-%20GO!5e0!3m2!1spt-BR!2sbr!4v1"
+                    width="100%"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa Chácara Safera">
+                </iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Ch%C3%A1cara+Safera+GO-050+Trindade+GO" target="_blank" rel="noopener noreferrer" class="modal-action-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 8 16 12 12 16"></polyline>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                Abrir no Google Maps
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal: Confirmar Presença -->
+    <div id="modal-rsvp" class="modal" role="dialog" aria-modal="true" aria-labelledby="rsvp-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.69 2.81a2 2 0 0 1-.45 2.11L7.91 8.78A16 16 0 0 0 12 12.87a16 16 0 0 0 4.09 2.09l1.64-1.64a2 2 0 0 1 2.11-.45c.91.33 1.85.56 2.81.69A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+            </div>
+            <h2 id="rsvp-title">Confirmar Presença</h2>
+            <p class="modal-desc">Confirme sua presença enviando uma mensagem pelo WhatsApp. Ficaremos muito felizes em recebê-lo(a) neste dia tão especial!</p>
+            <a href="https://wa.me/[INSERIR_NUMERO_WHATSAPP]?text=Ol%C3%A1!%20Confirmo%20minha%20presen%C3%A7a%20no%20casamento%20de%20Mariana%20e%20Vinicius%20no%20dia%2006%2F06%2F2026." target="_blank" rel="noopener noreferrer" class="modal-action-btn modal-action-btn--whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                </svg>
+                Confirmar via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal: Presentes -->
+    <div id="modal-presentes" class="modal" role="dialog" aria-modal="true" aria-labelledby="presentes-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6"></path>
+                    <rect x="2" y="7" width="20" height="5" rx="1"></rect>
+                    <path d="M12 22V7"></path>
+                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                </svg>
+            </div>
+            <h2 id="presentes-title">Presentes</h2>
+            <p class="modal-desc">Sua presença é o nosso maior presente! Mas se desejar nos presentear, preparamos algumas opções.</p>
+
+            <div class="pix-card">
+                <p class="pix-label">PIX</p>
+                <p class="pix-key">[INSERIR_CHAVE_PIX]</p>
+                <div class="pix-details">
+                    <p><strong>Banco:</strong> [INSERIR_BANCO]</p>
+                    <p><strong>Titular:</strong> [INSERIR_NOME_TITULAR]</p>
+                </div>
+            </div>
+
+            <a href="[INSERIR_LINK_LISTA_PRESENTES]" target="_blank" rel="noopener noreferrer" class="modal-action-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 8 16 12 12 16"></polyline>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                Ver Lista de Presentes
+            </a>
+        </div>
+    </div>
+
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

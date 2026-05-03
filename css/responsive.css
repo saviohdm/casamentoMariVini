@@ -1,0 +1,185 @@
+/* === SMALL PHONES (< 375px) === */
+@media (max-width: 374px) {
+    .inv-names {
+        font-size: 2.2rem;
+    }
+
+    .inv-card-body {
+        padding: 0 1.5rem 3rem;
+    }
+
+    .hero-names {
+        font-size: 2.3rem;
+    }
+
+    .action-btn {
+        padding: 0.875rem 0.4rem;
+        font-size: 0.68rem;
+    }
+
+    .countdown-compact .countdown-item > span:first-child {
+        font-size: 0.95rem;
+        min-width: 1.4rem;
+    }
+}
+
+/* === TABLET & DESKTOP (> 480px) === */
+@media (min-width: 480px) {
+    .hero-names {
+        font-size: 3.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.72rem;
+    }
+
+    .action-grid {
+        gap: 0.9rem;
+    }
+
+    .action-btn {
+        padding: 1.1rem 0.75rem;
+        font-size: 0.78rem;
+    }
+}
+
+/* === DESKTOP (> 768px): center modal as card instead of bottom sheet === */
+@media (min-width: 768px) {
+    .modal {
+        align-items: center;
+    }
+
+    .modal-panel {
+        border-radius: var(--modal-radius);
+        max-width: 440px;
+        max-height: 85vh;
+    }
+
+    .hero-names {
+        font-size: 3.6rem;
+    }
+}
+
+/* === LANDSCAPE (short screens) === */
+@media (max-height: 620px) and (orientation: landscape) {
+    .hero-subtitle {
+        display: none;
+    }
+
+    .hero-names {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hero-date {
+        margin-bottom: 0.1rem;
+    }
+
+    .hero-location {
+        margin-bottom: 0.75rem;
+    }
+
+    .countdown-compact {
+        margin-bottom: 1rem;
+    }
+
+    .action-grid {
+        gap: 0.5rem;
+    }
+
+    .action-btn {
+        padding: 0.65rem 0.5rem;
+        gap: 0.35rem;
+    }
+
+    .action-btn svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+/* === DESKTOP: invitation card shown as centered panel === */
+@media (min-width: 600px) {
+    .inv-cover-content {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .inv-envelope-img {
+        max-width: 380px;
+    }
+
+    .inv-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inv-watercolor {
+        height: 45vh;
+    }
+
+    .inv-card-body {
+        max-width: 420px;
+        width: 100%;
+    }
+
+    .inv-names {
+        font-size: 3rem;
+    }
+}
+
+/* === LANDSCAPE (telas curtas) === */
+@media (max-height: 620px) and (orientation: landscape) {
+    .inv-watercolor {
+        height: 35vh;
+    }
+
+    .inv-names {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .inv-card-body {
+        padding-bottom: 2rem;
+    }
+
+    .inv-pretitle {
+        margin-bottom: 0.5rem;
+    }
+
+    .inv-divider {
+        margin-bottom: 0.75rem;
+    }
+
+    .inv-location {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+    .inv-card {
+        transition: none;
+    }
+
+    .inv-cover {
+        transition: none;
+    }
+
+    .inv-hint {
+        animation: none;
+    }
+
+    .modal-panel {
+        transition: none;
+    }
+
+    .action-btn {
+        transition: none;
+    }
+
+    .modal {
+        transition: none;
+    }
+}
